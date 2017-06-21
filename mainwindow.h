@@ -6,7 +6,8 @@
 #include <QTabWidget>
 #include <QLayout>
 #include <QLabel>
-#include "CProjectKindWidget.h"
+#include "QMoreWidget/CProjectKindWidget.h"
+#include "CSingleProWidget.h"
 namespace Ui {
 class MainWindow;
 }
@@ -18,8 +19,11 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-public:
-    void myTest();
+public slots:
+    void SlotSelectProject(int number);
+private:
+    void initWidget();
+    void initLayout();
 private:
     Ui::MainWindow *ui;
     // 菜单栏
@@ -33,6 +37,10 @@ private:
     CProjectKindWidget *m_pProjectKindWidget;
     // 选项卡
     QTabWidget *m_pProTableWidget;
+    CSingleProWidget *m_pSingleProWidget;
+    QLabel *m_pLabelTest2;
+    QLabel *m_pLabelTest3;
+    QLabel *m_pLabelTest4;
 
 };
 

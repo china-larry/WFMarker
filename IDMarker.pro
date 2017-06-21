@@ -25,11 +25,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    CProjectKindWidget.cpp \
-    CSingleProWidget.cpp
+    CSingleProWidget.cpp \
+    QMoreWidget/CProjectInfoWidget.cpp \
+    QMoreWidget/CProjectKindWidget.cpp
 
 HEADERS  += mainwindow.h \
-    CProjectKindWidget.h \
-    CSingleProWidget.h
+    CSingleProWidget.h \
+    QMoreWidget/CProjectInfoWidget.h \
+    QMoreWidget/CProjectKindWidget.h
 
 FORMS    += mainwindow.ui

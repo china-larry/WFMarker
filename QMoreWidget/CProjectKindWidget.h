@@ -13,7 +13,12 @@ public:
     explicit CProjectKindWidget(QWidget *parent = 0);
 
 signals:
-
+    void SigSelectPro(int number);
+private slots:
+    void SlotsSingleRadioSelect();
+    void SlotDoubleRadioSelect();
+    void SlotThreeRadioSelect();
+    void SlotQualitativeRadioSelect();
 public slots:
 
 private:

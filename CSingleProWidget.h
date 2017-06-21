@@ -2,7 +2,7 @@
 #define CSINGLEPROWIDGET_H
 
 #include <QWidget>
-
+#include <QMoreWidget/CProjectInfoWidget.h>
 class CSingleProWidget : public QWidget
 {
     Q_OBJECT
@@ -12,6 +12,9 @@ public:
 signals:
 
 public slots:
+
+private:
+    CProjectInfoWidget *m_pProjectInfoWidget;
 };
 
 #endif // CSINGLEPROWIDGET_H

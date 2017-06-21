@@ -27,11 +27,15 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     CSingleProWidget.cpp \
     QMoreWidget/CProjectInfoWidget.cpp \
-    QMoreWidget/CProjectKindWidget.cpp
+    QMoreWidget/CProjectKindWidget.cpp \
+    CProTitleWidget/CProjectInfoWidget.cpp \
+    CProTitleWidget/CProjectKindWidget.cpp
 
 HEADERS  += mainwindow.h \
     CSingleProWidget.h \
     QMoreWidget/CProjectInfoWidget.h \
-    QMoreWidget/CProjectKindWidget.h
+    QMoreWidget/CProjectKindWidget.h \
+    CProTitleWidget/CProjectInfoWidget.h \
+    CProTitleWidget/CProjectKindWidget.h
 
 FORMS    += mainwindow.ui

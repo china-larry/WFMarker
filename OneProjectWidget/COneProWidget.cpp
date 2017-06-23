@@ -1,6 +1,6 @@
-#include "CSingleProWidget.h"
+#include "COneProWidget.h"
 #include <QBoxLayout>
-CSingleProWidget::CSingleProWidget(QWidget *parent) : QWidget(parent)
+COneProWidget::COneProWidget(QWidget *parent) : QWidget(parent)
 {
     this->resize(1000, 500);
     m_pProjectInfoWidget = new CProjectInfoWidget(this);

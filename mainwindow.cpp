@@ -25,16 +25,16 @@ void MainWindow::SlotSelectProject(int number)
     switch (number) {
     case 1:// 单个项目
         m_pProTableWidget->clear();
-        m_pProTableWidget->addTab(m_pSingleProWidget, "第一个项目");
+        m_pProTableWidget->addTab(m_pOneProWidget, "第一个项目");
         break;
     case 2:// 两个项目
         m_pProTableWidget->clear();
-        m_pProTableWidget->addTab(m_pSingleProWidget, "第一个项目");
+        m_pProTableWidget->addTab(m_pOneProWidget, "第一个项目");
         m_pProTableWidget->addTab(m_pLabelTest2, "第二个项目");
         break;
     case 3:// 三个项目
         m_pProTableWidget->clear();
-        m_pProTableWidget->addTab(m_pSingleProWidget, "第一个项目");
+        m_pProTableWidget->addTab(m_pOneProWidget, "第一个项目");
         m_pProTableWidget->addTab(m_pLabelTest2, "第二个项目");
         m_pProTableWidget->addTab(m_pLabelTest3, "第三个项目");
         break;
@@ -44,7 +44,7 @@ void MainWindow::SlotSelectProject(int number)
         break;
     default:
         m_pProTableWidget->clear();
-        m_pProTableWidget->addTab(m_pSingleProWidget, "第一个项目");
+        m_pProTableWidget->addTab(m_pOneProWidget, "第一个项目");
         break;
     }
 }
@@ -64,11 +64,11 @@ void MainWindow::initWidget()
     connect(m_pProjectKindWidget, SIGNAL(SigSelectPro(int)), this, SLOT(SlotSelectProject(int)));
     // 选项卡
     m_pProTableWidget = new QTabWidget(this);
-    m_pSingleProWidget = new CSingleProWidget(this);
+    m_pOneProWidget = new CSingleProWidget(this);
     m_pLabelTest2 = new QLabel("两个项目");
     m_pLabelTest3 = new QLabel("三个项目");
     m_pLabelTest4 = new QLabel("定性项目");
-    m_pProTableWidget->addTab(m_pSingleProWidget, "第一个项目");
+    m_pProTableWidget->addTab(m_pOneProWidget, "第一个项目");
 
 }
 

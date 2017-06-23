@@ -29,13 +29,23 @@ SOURCES += main.cpp\
     QMoreWidget/CProjectInfoWidget.cpp \
     QMoreWidget/CProjectKindWidget.cpp \
     CProTitleWidget/CProjectInfoWidget.cpp \
-    CProTitleWidget/CProjectKindWidget.cpp
+    CProTitleWidget/CProjectKindWidget.cpp \
+    CProTitleWidget/CFcPeakWidget.cpp \
+    CNatureTempletWidget/CFcPeakWidget.cpp \
+    CNatureTempletWidget/CProjectInfoWidget.cpp \
+    CNatureTempletWidget/CProjectKindWidget.cpp \
+    OneProjectWidget/COneProWidget.cpp
 
 HEADERS  += mainwindow.h \
     CSingleProWidget.h \
     QMoreWidget/CProjectInfoWidget.h \
     QMoreWidget/CProjectKindWidget.h \
     CProTitleWidget/CProjectInfoWidget.h \
-    CProTitleWidget/CProjectKindWidget.h
+    CProTitleWidget/CProjectKindWidget.h \
+    CProTitleWidget/CFcPeakWidget.h \
+    CNatureTempletWidget/CFcPeakWidget.h \
+    CNatureTempletWidget/CProjectInfoWidget.h \
+    CNatureTempletWidget/CProjectKindWidget.h \
+    OneProjectWidget/COneProWidget.h
 
 FORMS    += mainwindow.ui

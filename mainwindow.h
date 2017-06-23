@@ -37,7 +37,7 @@ private:
     CProjectKindWidget *m_pProjectKindWidget;
     // 选项卡
     QTabWidget *m_pProTableWidget;
-    CSingleProWidget *m_pSingleProWidget;
+    CSingleProWidget *m_pOneProWidget;
     QLabel *m_pLabelTest2;
     QLabel *m_pLabelTest3;
     QLabel *m_pLabelTest4;
